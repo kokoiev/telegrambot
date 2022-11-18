@@ -1,9 +1,18 @@
 import './App.css';
+import {useTelegram} from "./hooks/useTelegram";
+import {useEffect} from "react";
 
 function App() {
-  return (
+
+    const {tg, onToggleButton} = useTelegram()
+
+    useEffect(()=>{
+        tg.ready()
+    },[])
+
+    return (
     <div className="App">
-      WORK
+        <button onClick={onToggleButton}>toggle</button>
     </div>
   );
 }
