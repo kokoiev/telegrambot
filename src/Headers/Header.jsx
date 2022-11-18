@@ -5,8 +5,6 @@ import {useTelegram} from "../hooks/useTelegram";
 const Header = () => {
     const {tg, onClose} = useTelegram()
 
-
-
     return (
         <div className={'header'}>
             <Button onClik={onClose} >Закрити</Button>
