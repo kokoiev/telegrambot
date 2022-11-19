@@ -4,10 +4,11 @@ import {useEffect} from "react";
 import Header from "./components/Headers/Header";
 
 function App() {
+    console.log('ss')
 
     const { tg , onToggleButton} = useTelegram()
 
-    useEffect(()=>{
+    useEffect(() => {
         tg.ready()
     },[])
 
