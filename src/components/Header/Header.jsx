@@ -12,7 +12,6 @@ const Header = () => {
             <span className={'username'}>
                 { user?.username }
             </span>
-            
         </div>
     );
 };
