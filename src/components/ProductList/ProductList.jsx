@@ -31,7 +31,7 @@ const ProductList = () => {
             totalPrice: getTotalPrice(addedItems),
             queryId,
         }
-        fetch('https://lambent-griffin-3ae17e.netlify.app', {
+        fetch('https://34.79.96.70:8000/web-data', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
