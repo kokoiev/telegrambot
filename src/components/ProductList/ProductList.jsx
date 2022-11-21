@@ -31,7 +31,7 @@ const ProductList = () => {
             totalPrice: getTotalPrice(addedItems),
             queryId,
         }
-        fetch('https://10.132.0.4:8000/web-data', {
+        fetch('https://134.79.96.70:8000/web-data', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
